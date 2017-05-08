@@ -4,6 +4,6 @@
 En el directorio casos se encuentra la solucion a las tres primeras preguntas.
 
 <h3>Parte 2: Aplicativo </h3>
-En el directorio aplicativo se encuentra la solución a la pregunta número 4, para el cual se ha utilizado Slim Framework 2.
+En el directorio aplicativo se encuentra la solución a la pregunta número 4, para el cual se ha utilizado Slim Framework 2.<br>
 Para el el backend se ha utilizado bootstrap y angularjs 1.6
 
