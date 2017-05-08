@@ -1,0 +1,49 @@
+<div class="container" style="padding-top:20px;width: 50%">
+
+    <legend>Listado de Empleados</legend>
+
+    <div style="">
+        <nav class="navbar navbar-default " role="navigation">
+            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+
+                <form class="navbar-form navbar-left" role="search" action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" ng-model="email">
+                    </div>
+                    <button type="button" class="btn btn-default" ng-click="buscar()">Búscar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <hr/>
+    <table class="table__empleados table table-bordered">
+        <thead>
+            <th class="text-center">Name</th>
+            <th class="text-center">Email</th>
+            <th class="text-center">Position</th>
+            <th class="text-center">Salary</th>
+            <th class="text-center"></th>
+        </thead>
+        <tbody>
+        <tr ng-show="empleados.length == 0">
+        	<td colspan="5">No se encontraron empleados</td>
+        </tr>
+        <tr ng-repeat="item in empleados">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.position}}</td>
+                <td>{{item.salary}}</td>
+                <td class="text-center">
+                    <span class="glyphicon glyphicon-search" style="cursor: pointer;" 
+                    ng-click="showDetailEmplopyee(item.id)"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalEmployee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+</div>

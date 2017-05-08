@@ -1,0 +1,54 @@
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()">
+    <span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title">Empleado: <b><span>{{empleado.name}}</span></b></h4>
+</div>
+<div class="modal-body">
+   <div class="row">
+
+       <div class="col-md-6">
+           <label class="control-label">Email</label>
+           <span>{{empleado.email}}</span>
+       </div>
+       <div class="col-md-6">
+           <label class="control-label">Phone</label>
+           <span>{{empleado.phone}}</span>
+       </div>
+
+   </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <label class="control-label">Address</label>
+            <span>{{empleado.address}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <label class="control-label">Position</label>
+            <span>{{empleado.position}}</span>
+        </div>
+        <div class="col-md-6">
+            <label class="control-label">Salary</label>
+            <span>{{empleado.salary}}</span>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <label class="control-label">Skills</label>
+            
+            <span ng-repeat="item in empleado.skills">
+            {{item.skill}}, 
+            </span>
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancel()">Cerrar</button>
+</div>
+

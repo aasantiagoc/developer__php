@@ -1,0 +1,6 @@
+{
+  "require": {
+    "slim/slim": "2.*",
+    "twbs/bootstrap": "^3.3"
+  }
+}
